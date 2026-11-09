@@ -1,0 +1,4 @@
+mysql-connector-python>=9.0
+# Only needed for servers that use the "ssh" block in servers.json:
+sshtunnel>=0.4.0
+paramiko<4

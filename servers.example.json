@@ -1,0 +1,17 @@
+{
+  "servers": [
+    {
+      "name": "prod-db1",
+      "host": "db1.prod.example.com",
+      "port": 3306,
+      "user": "health_monitor"
+    },
+    {
+      "name": "dr-db2-via-ssh",
+      "host": "db2.other-domain.example.com",
+      "port": 3306,
+      "user": "health_monitor",
+      "ssh": { "host": "db2.other-domain.example.com", "port": 22, "user": "your_os_user" }
+    }
+  ]
+}
